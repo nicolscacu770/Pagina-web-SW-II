@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Control Laboratorios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="content">
+    <div class="header">
+    	<img id="img" src="img/logo.jpg"></img>
+  <h11>Control de ingreso y/o salida de los laboratorios</h11>
+</div>
+
+</div>    
+
+	<div class="container-imagen">
+		<img id="img1" src="img/Inicio.jpg" width="725" height="450"></img>
+        <p>Tomado de:</p>
+	</div>
+
+    <div class="cod-container">
+        <div class="form-header">
+
+            <h1>Bienvenido</h1>
+        </div>
+
+        <div class="form-content">
+            <form action="#" class="cod-form">
+                <div class="form-title">
+                    <h3>Iniciar Sesión</h3>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" class="form-input" name="form-input" id="correo" placeholder="Correo">
+                    <label class="label" for="correo">Correo</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-input" name="form-input" id="pass" placeholder="Contraseña">
+                    <label class="label" for="pass">Contraseña</label>
+                </div>
+
+                <div class="input-group">
+
+                    <!--<button onclick="Validar()">Iniciar Sesión</button>!-->
+                    <input type="submit" class="form-input" id="Inicio" onclick="Validar()" value="Iniciar Sesión">
+                    <p>¿No tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="form-content">
+            <form action="#" class="cod-form">
+                <div class="form-title">
+                    <h3>Regístrate Gratis</h3>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" class="form-input" name="form-input" id="reg-correo">
+                    <label class="label" for="reg-correo">Correo</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-input" name="form-input" id="reg-pass">
+                    <label class="label" for="reg-pass">Contraseña</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-input" name="form-input" id="reg-rep-pass">
+                    <label class="label" for="reg-rep-pass">Repetir Contraseña</label>
+                </div>
+
+                <div class="input-group">
+                    <!--<button onclick="registrarse()">Registrarse</button>!-->
+                    <input type="submit" class="form-input" id="registrar" onclick="registrarse()" value="Registrarse">
+                    <p>¿Ya tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p class="text-center">&#169Universidad Pedagógica y Tecnológica de Colombia. Dirección de Tecnologías de la Información.</p>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

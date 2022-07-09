@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://fondosmil.com/fondo/52740.jpg");
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+    font-family: Arial;
+}
+
+.cod-container {
+    background: #fff;
+    width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #F2F4F4;
+    color:#fff;
+    z-index: 100;
+    height: 70px;
+    overflow: hidden;
+    text-align:left;
+    line-height:0px;
+}
+
+.header img{
+ height:60px;
+ width:300px;
+ object-position:left;
+}
+
+.header h11 {
+    color: black;
+    font-family: AbeeZee;
+    font-weight: normal;
+    font-size:40px;
+     text-align:center;
+}
+
+.header h{
+    font-size:30px;
+    color: black;
+     text-align:center;
+}
+
+.header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #F2F4F4;
+    color:#fff;
+    z-index: 100;
+    height: 70px;
+    overflow: hidden;
+    text-align:left;
+    line-height:0px;
+}
+
+.header1 img{
+ height:60px;
+ width:300px;
+ object-position:left;
+}
+
+.header1 h11 {
+    color: black;
+    font-family: AbeeZee;
+    font-weight: normal;
+    font-size:35px;
+     text-align:center;
+}
+
+.container-imagen {
+    width: 40%;
+    background: #F2F4F4;
+    color:#fff;
+    margin-right: 250px;
+
+    height: 450px;
+
+}
+
+footer {
+    background-color: #F2F4F4;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: black;
+    line-height:40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-header {
+    background: #CCD1D1;
+    text-align: center;
+    padding: 25px 0 25px;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
+}
+
+.form-header img {
+    vertical-align: top;
+    width: 40px;
+}
+
+.form-header h1 {
+    color: #fff;
+    font-family: AbeeZee;
+    font-weight: normal;
+    margin-top: 1px;
+}
+
+.form-header span {
+    color: #FF3D00;
+}
+
+.cod-form {
+    padding: 10px 40px 40px;
+}
+
+.form-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 32px;
+    overflow: hidden;
+    font-family: AbeeZee;
+    color: #FF3D00;
+
+}
+
+h3 {
+    position: relative;
+    display: inline-block;
+    color: #2E4053 ;
+    padding: 0 10px;
+    font-size: 26px;
+}
+
+h3::after,
+h3::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #021e26;
+    top: 0.5em;
+}
+
+h3::after {
+    left: 100%;
+}
+
+h3::before {
+    right: 100%;
+}
+
+h5 {
+    position: relative;
+    display: inline-block;
+    color: #2E4053 ;
+    padding: 0 10px;
+    font-size: 26px;
+}
+
+h5::after,
+h5::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #021e26;
+    top: 0.5em;
+}
+
+h5::after {
+    left: 100%;
+}
+
+h5::before {
+    right: 100%;
+}
+
+h6 {
+    position: relative;
+    display: inline-block;
+    color: #2E4053 ;
+    padding: 0 10px;
+    font-size: 26px;
+}
+
+h6::after {
+    left: 100%;
+}
+
+h6::before {
+    right: 100%;
+}
+
+.cod-form {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+input[type="email"],
+input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #021e26;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: #021e26;
+    padding-left: 10px;
+    font-family: AbeeZee;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: #2E4053 ;
+    padding-left: 10px;
+    cursor: text;
+    transition: all .3s ease;
+    font-family: AbeeZee;
+}s
+
+.form-input:focus + label {
+    top: -14px;
+    font-size: 12px;
+    color: #666565;
+    font-family: AbeeZee;
+}
+
+.active {
+    top: -14px;
+    font-size: 12px;
+    color: #666565;
+
+}
+
+.error {
+    color: #FF0000;
+}
+
+input[type="submit"] {
+    background: none;
+    border: none;
+    background: #52BE80 ;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: AbeeZee;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+input[type="submit"]:hover {
+    background: #021E26;
+}
+
+button[type="submit"]{
+    background: none;
+    border: none;
+    background: #52BE80 ;
+    color: #fff;
+    width: 40%;
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: AbeeZee;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    transition: all .06s ease;
+}
+
+button[type="submit"]:hover {
+    background: #021E26;
+}
+
+
+.input-group > p {
+    color: #2E4053;
+    text-align: center;
+    font-size: 20px;
+    font-family: AbeeZee;
+}
+
+.input-group p > a {
+    text-decoration: none;
+    color: #2874A6;
+}
+
+.input-group p > a:hover {
+    text-decoration: underline;
+}
+
+.form-content {
+    display: none;
+}
+
+.form-content:nth-child(2) {
+    display: block;
+}

@@ -1,4 +1,5 @@
 var estudiante = [];
+
 (function(){
     $(document).ready(function(){
         $('.alt-form').click(function(){
@@ -21,6 +22,11 @@ var estudiante = [];
                     this.nextElementSibling.classList.remove('active');
                 }
             })
+
+            formRegistro[i].addEventListener('click',  function(){
+                    this.nextElementSibling.classList.add('active');
+                    this.nextElementSibling.classList.remove('error');
+            })
         }
 
     })
@@ -31,7 +37,11 @@ class Estudiante{
         this.correo = correo;
         this.pass = pass;
     }
+
 }
+
+estudiante.push( new Estudiante("jairo@gmail.com", 12345));
+estudiante.push( new Estudiante("nora@gmail.com", 12345));
 
 function Validar() {
     var correo=document.getElementById("correo");
@@ -50,15 +60,16 @@ function Validar() {
             //alert(`${correo.value} = ${pass.value}`);
             //alert(`${estudiante[0].correo} = ${estudiante[0].pass }`);
 
-            if (correo.value == "nicolas.cacua@uptc.edu.co" && pass.value == "12345"){
+            if (correo.value == estudiante[0].correo && pass.value == estudiante[0].pass){
                 redirec();
                 setTimeout ("redirec()", 100); //tiempo expresado en milisegundos
+                alert("correcto")
             }
 
 
         }
 }
-function redirec(){window.location.href="index-1.html";}
+function redirec(){window.location.href="docentes_estudiantes.html";}
 
 function registrarse(){
 
@@ -66,11 +77,13 @@ function registrarse(){
     var regpass=document.getElementById("reg-pass");
     var regreppass=document.getElementById("reg-rep-pass");
 
-
     if (regcorreo.value !="" && regpass.value !="" && regreppass.value !=""){
         if(regpass.value == regreppass.value){
-            estudiante.push (new Estudiante(regcorreo.value, regpass.value));
-            alert("registro completo");
+            var student = new Estudiante(regcorreo.value, regpass.value);
+            estudiante.push(student);
+            console.log(estudiante);
+            alert("registro completo de: " + student.pass);
+
         }else{
             alert("Las contraseñas no coinciden");
         }

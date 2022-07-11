@@ -268,7 +268,7 @@ input[type="password"] {
     color: #FF0000;
 }
 
-input[type="submit"] {
+input[type="button"] {
     background: none;
     border: none;
     background: #52BE80 ;
@@ -282,7 +282,7 @@ input[type="submit"] {
     transition: all .5s ease;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
     background: #021E26;
 }
 
@@ -303,7 +303,6 @@ button[type="submit"]{
 button[type="submit"]:hover {
     background: #021E26;
 }
-
 
 .input-group > p {
     color: #2E4053;

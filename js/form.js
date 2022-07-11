@@ -1,4 +1,45 @@
 var estudiante = [];
+var users=[];
+
+//============recibir Json, método elaborado===========================================
+var archivoUsuarios = new XMLHttpRequest(); //objeto que obtiene info de una URL acepta cualquier tipo de dato
+const fileRuta = './js/usuarios.json';
+archivoUsuarios.open("GET",fileRuta);
+archivoUsuarios.responseType = 'json';//indica el tipo de archivo que va a recibir
+
+archivoUsuarios.onload = function(){
+    if(archivoUsuarios.status  == 200){ //el archivo ya se cargó
+        users = archivoUsuarios.response; //EL ARCHIVO LLEGÁ COMO UN JSON
+        asignar();
+    }
+    
+}
+
+function asignar(){
+    for (let i = 0; i < users['usuarios'].length; i++) {
+        estudiante.push(users['usuarios'][i]);
+    } 
+}
+
+archivoUsuarios.send();//realiza peticion http al servidor
+//=====================================================================================
+
+
+  
+/*
+var txt = archivoUsuarios.responseText;//muestra todos los datos en pantalla, lo recibe como un String
+
+console.log(txt.length);
+for (let i = 0; i < txt.length; i++) {
+    console.log(txt[i]);
+    estudiante.push(txt[i]);
+}
+*/
+
+//estudiante.forEach(function(data){
+//    console.log(data);
+//});
+
 
 (function(){
     $(document).ready(function(){
@@ -60,11 +101,14 @@ function Validar() {
             //alert(`${correo.value} = ${pass.value}`);
             //alert(`${estudiante[0].correo} = ${estudiante[0].pass }`);
 
-            if (correo.value == estudiante[0].correo && pass.value == estudiante[0].pass){
-                redirec();
-                setTimeout ("redirec()", 100); //tiempo expresado en milisegundos
-                alert("correcto")
+            for (let i = 0; i < estudiante.length; i++) {
+                if (correo.value == estudiante[i].correo && pass.value == estudiante[i].pass){
+                    redirec();
+                    setTimeout ("redirec()", 100); //tiempo expresado en milisegundos
+                    alert("correcto")
+                }
             }
+           
 
 
         }
@@ -82,12 +126,9 @@ function registrarse(){
             var student = new Estudiante(regcorreo.value, regpass.value);
             estudiante.push(student);
             console.log(estudiante);
-            alert("registro completo de: " + student.pass);
-
         }else{
             alert("Las contraseñas no coinciden");
         }
-
     }
     else{
         alert("Campos vacios");

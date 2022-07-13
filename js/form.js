@@ -1,7 +1,26 @@
 var estudiante = [];
 var users=[];
+const rutaUsuarios = 'js/usuarios.json';
 
+//=============metodo fetch API==============================
+fetch(rutaUsuarios)
+    .then(function(res){ //devuelve la petición (response)
+        return res.json();
+    })
+    .then(function(data){
+        //console.log(data);
+        users = data["usuarios"];
+        asignar();
+    })
+
+    function asignar(){
+        for (let i = 0; i < users.length; i++) {
+            console.log(users[i]);
+            estudiante.push(users[i]);
+        } 
+    }
 //============recibir Json, método elaborado===========================================
+/*
 var archivoUsuarios = new XMLHttpRequest(); //objeto que obtiene info de una URL acepta cualquier tipo de dato
 const fileRuta = './js/usuarios.json';
 archivoUsuarios.open("GET",fileRuta);
@@ -10,36 +29,14 @@ archivoUsuarios.responseType = 'json';//indica el tipo de archivo que va a recib
 archivoUsuarios.onload = function(){
     if(archivoUsuarios.status  == 200){ //el archivo ya se cargó
         users = archivoUsuarios.response; //EL ARCHIVO LLEGÁ COMO UN JSON
+        console.log(users);
+        console.log(users['usuarios']);
         asignar();
     }
     
 }
-
-function asignar(){
-    for (let i = 0; i < users['usuarios'].length; i++) {
-        estudiante.push(users['usuarios'][i]);
-    } 
-}
-
 archivoUsuarios.send();//realiza peticion http al servidor
-//=====================================================================================
-
-
-  
-/*
-var txt = archivoUsuarios.responseText;//muestra todos los datos en pantalla, lo recibe como un String
-
-console.log(txt.length);
-for (let i = 0; i < txt.length; i++) {
-    console.log(txt[i]);
-    estudiante.push(txt[i]);
-}
 */
-
-//estudiante.forEach(function(data){
-//    console.log(data);
-//});
-
 
 (function(){
     $(document).ready(function(){

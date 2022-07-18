@@ -95,6 +95,17 @@ body {
 
 }
 
+.container-imagen- {
+    width: 50%;
+    background: #F2F4F4;
+    color:#fff;
+    margin-right: 150px;
+
+    height: 350px;
+    grid-template-columns: auto;
+
+}
+
 footer {
     background-color: #F2F4F4;
     position: absolute;

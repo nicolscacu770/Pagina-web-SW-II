@@ -54,3 +54,13 @@ position: left;
     background: #F2F4F4;
     color:#fff;
 }
+
+
+.texto1{
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: black;
+}

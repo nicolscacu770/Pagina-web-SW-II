@@ -14,7 +14,7 @@ body{
 }
 .header2{
     width: 100%;
-    height: 60px;
+    height: 62px;
     background: #F2F4F4;
     color: #000;
 
@@ -30,14 +30,11 @@ body{
 h111{
     top:100px;
     float: left;
-    font-size: 20px;
     text-align:center;
     color: #000;
-    color: black;
     font-family: AbeeZee;
     font-weight: normal;
     font-size:35px;
-     text-align:center;
 }
 .contenedor1{
     display: table;

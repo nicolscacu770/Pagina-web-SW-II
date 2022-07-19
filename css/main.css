@@ -23,13 +23,13 @@ header{
     left: 0;
     z-index: 100;;
 }
-.contenedor{
+.contenedor1{
     width: 98%;
     margin: auto
 }
 h1{
     float: left;
 }
-header .contenedor{
+header .contenedor1{
     display: table;
 }

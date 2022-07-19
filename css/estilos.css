@@ -79,6 +79,7 @@ body {
 
     height: 350px;
     grid-template-columns: auto;
+    position: relative;
 
 }
 
@@ -124,7 +125,7 @@ footer {
 }
 
 .form-title {
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-weight: normal;
     margin-bottom: 32px;

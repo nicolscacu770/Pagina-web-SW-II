@@ -1,3 +1,20 @@
+.overlayMisMaterias{
+    position: left;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: visible;
+}
+
+.overlayMisMaterias.active{
+    visibility: visible;
+}
+
 .contenedor2{
     position: relative;
     display: inline-block;
@@ -35,6 +52,22 @@
     margin-right: 50px;
 }
 
+.contenedor3{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.contenedor3{
+    display: table;
+}
+.contenedor3{
+    width: 100%;
+    margin-right: 50px;
+}
+
+
 .texto1{
     position: relative;
     bottom: 30px;
@@ -52,4 +85,12 @@
     bottom: 30px;
     left: 0px;
     color: white;
+}
+
+.contenedor3 t3{
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    color: white;
+    font-size: 25s0px;
 }

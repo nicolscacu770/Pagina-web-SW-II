@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Control Laboratorios</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<header>
+    <div class="contenedor1">
+        <div class="header2">
+        <img id="img" src="img/logo.jpg">
+        <h111>Control de ingreso y/o salida de los laboratorios</h111></img>
+        <input type="checkbox" name="" id="menu-bar">
+        <label  class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+            <a href="Materias.html">Consultar docentes</a>
+            <a href="Materias.html">Consultar estudiantes</a>
+            <a href="Materias.html">Asignar materia</a>
+            <a href="index.html">Cerrar sesión</a>
+        </nav>
+    </div>
+</div>
+</header>
+
+
+	<div class="contenedor3">
+		<t3>Materias</t3>
+	</div>
+
+	<div class="overlay" id="overlay">
+        <div class="popup" id="popup" style="background: #D5DBDB">
+            <h3>Nueva actividad</h3>
+            <form action="">
+                <div class="inputs">
+                    <input type="text" placeholder="Nombre" id="newActivityName">
+                    <div>
+                        tipo de actividad:
+                        <select id="newActivityType" style="width: 68%; margin-bottom: 20px; height: 30px">
+                            <option value="Taller">Taller</option>
+                            <option value="Parcial">Parcial</option>
+                            <option value="Quiz">Quiz</option>
+                            <option value="Proyecto">Poyecto</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <input type="date" placeholder="fecha de entrega" id="newActivityDate">
+                        <input type="number" placeholder="Ponderado (%)" id="newActivityPonderate" min="1" max="100" onkeypress="return validarNumericosPonderate(event, this)" >
+                    </div>
+
+                </div>
+            </form>
+            <button type="submit" class="form-input" onclick="cancelarActividad()" >Cancelar actividad</button>
+            <button type="submit" class="form-input" onclick="agregarNuevaActividad()" >Agregar actividad</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p class="text-center">&#169Universidad Pedagógica y Tecnológica de Colombia. Dirección de Tecnologías de la Información.</p>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

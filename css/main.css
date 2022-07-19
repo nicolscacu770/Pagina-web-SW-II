@@ -27,9 +27,12 @@ body{
     width: 98%;
     margin: auto
 }
-h1{
+h111{
     top:100px;
     float: left;
+    font-size: 20px;
+    text-align:center;
+    color: #000;
     color: black;
     font-family: AbeeZee;
     font-weight: normal;

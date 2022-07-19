@@ -54,37 +54,58 @@ position: left;
     background: #F2F4F4;
     color:#fff;
 }
-.contenedor1{
-    position: left;
+.contenedor2{
+    position: relative;
     display: inline-block;
-    text-align: center;
+    text-align: left;
+    
 }
 
 .contenedor2{
-    position: left;
-    display: inline-block;
-    text-align: center;
+    display: table;
 }
+.contenedor2{
+    width: 100%;
+    margin-left: 100px;
+}
+
+.contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    clear: both;
+}
+
 .contenedor{
     position: relative;
     display: inline-block;
     text-align: center;
+    
 }
+
+.contenedor{
+    display: table;
+}
+.contenedor{
+    width: 100%;
+    margin-right: 20px;
+}
+
 .texto1{
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     left: 0px;
-    color: gray;
+    color: white;
 }
 .texto2{
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     left: 0px;
-    color: gray;
+    color: black;
 }
 .texto{
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 30px;
     left: 0px;
     color: white;
 }

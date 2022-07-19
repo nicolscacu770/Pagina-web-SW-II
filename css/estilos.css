@@ -43,20 +43,6 @@ body {
  object-position:left;
 }
 
-.header h11 {
-    color: black;
-    font-family: AbeeZee;
-    font-weight: normal;
-    font-size:40px;
-     text-align:center;
-}
-
-.header h{
-    font-size:30px;
-    color: black;
-     text-align:center;
-}
-
 .header1 {
     position: fixed;
     top: 0;
@@ -123,7 +109,7 @@ footer {
 }
 
 .form-header h1 {
-    color: #fff;
+    color: black;
     font-family: AbeeZee;
     font-weight: normal;
     margin-top: 1px;

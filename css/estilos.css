@@ -265,6 +265,20 @@ button[type="submit"]:hover {
     background: #021E26;
 }
 
+select[type="menuConsulta"] {
+    background: none;
+    border: none;
+    background: gray;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: AbeeZee;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
 .input-group > p {
     color: #2E4053;
     text-align: center;

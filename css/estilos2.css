@@ -74,22 +74,14 @@
     position: relative;
     left: 0px;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-.scroll_vertical {
-    height: 114px;
-	width: 114px;
-	overflow: auto;
-	border: 1px solid #666;
-	background-color: #ccc;
-	padding: 8px;
-}
 
 .scroll-container {
     display: block;
     width:auto;
-    height: 380px;
+    height: 330px;
     overflow-y: scroll;
     scroll-behavior: smooth;
   }

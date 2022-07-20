@@ -76,3 +76,12 @@
     color: black;
     font-size: 20px;
 }
+
+.scroll_vertical {
+    height: 114px;
+	width: 114px;
+	overflow: auto;
+	border: 1px solid #666;
+	background-color: #ccc;
+	padding: 8px;
+}

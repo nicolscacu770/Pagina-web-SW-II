@@ -15,12 +15,11 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body >
-
 	
 	<header>
 		
 		<div class="contenedor-encabezado">
-			<h111>Notas U</h111>
+			<h111>Control de los laboratorios</h111></img>
 			<input type="checkbox" name="" id="menu-bar">
 			<label  class="icon-menu" for="menu-bar"></label>
 			<nav class="menu">
@@ -31,37 +30,38 @@
 			</nav>
 	</div>
 	</header>
+
+
+
 	<div class="overlay" id="overlay">
         <div class="popup" id="popup" style="background: #D5DBDB">
 			<div class="row">
-				<div class="form-title">
-					<h8>Materias</h8s>
+				<div class="form-title">	
+					<h8>Horario</h8s>
 				</div>
 			</div>
-
+			
 			<div class="row">
 				<div class="col-12">
 					<select type="menuMaterias" name="mis materias" id="listMatters" onchange="showMatter()">
-						<option>Mis materias</option>
+						<option>Prueba</option>
 					</select>
 				</div>
 			</div>
-
+			<div class="scroll_vertical">
 			<div class="col-12">
 				<table class="table table-striped" id="tableActivities" >
 					<thead>
 					<tr>
 						<th scope="col">Hora</th>
-						<th scope="col">Nombre actividad</th>
-						<th scope="col">tipo de actividad</th>
-						<th scope="col">fecha de entrega</th>
-						<th scope="col">alerta</th>
-						<th scope="col">nota</th>
+						<th scope="col">Lunes</th>
+						<th scope="col">Martes</th>
+						<th scope="col">Miercoles</th>
+						<th scope="col">Jueves</th>
+						<th scope="col">Viernes</th>
+						<th scope="col">Sabado</th>
 					</tr>
 				</thead>
-				<tbody id="bodyActivity">
-
-				</tbody>
 					<tr>
 						<td>8:00</td>
 					  </tr>
@@ -94,12 +94,14 @@
 					  </tr>
 				</table>
 			</div>
+			</div>
         </div>
  
-	</div>
 
 
-
+<footer>
+	<p class="text-center">&#169Universidad Pedagógica y Tecnológica de Colombia. Dirección de Tecnologías de la Información.</p>
+</footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/form.js"></script>

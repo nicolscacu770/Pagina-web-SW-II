@@ -85,3 +85,11 @@
 	background-color: #ccc;
 	padding: 8px;
 }
+
+.scroll-container {
+    display: block;
+    width:auto;
+    height: 380px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }

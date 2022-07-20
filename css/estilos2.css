@@ -1,20 +1,3 @@
-.overlayMisMaterias{
-    position: left;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    visibility: visible;
-}
-
-.overlayMisMaterias.active{
-    visibility: visible;
-}
-
 .contenedor2{
     position: relative;
     display: inline-block;
@@ -87,10 +70,9 @@
     color: white;
 }
 
-.contenedor3 t3{
+.form-title h8{
     position: relative;
-    bottom: 30px;
     left: 0px;
-    color: white;
-    font-size: 25s0px;
+    color: black;
+    font-size: 20px;
 }

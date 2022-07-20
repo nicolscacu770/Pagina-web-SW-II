@@ -1,0 +1,211 @@
+.overlayPerfil{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: visible;
+}
+
+.overlayPerfil.active{
+    visibility: visible;
+}
+
+.popupPerfil{
+
+    background: gainsboro;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.overlayMisMaterias{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: visible;
+}
+
+.overlayMisMaterias.active{
+    visibility: visible;
+}
+
+.popupMisActividades{
+    background: gainsboro;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.menu .btnPerfil:hover{
+    color: #0d6efd;
+}
+
+.menu .btnMisMaterias:hover{
+    color: #0d6efd;
+}
+
+.overlay{
+    background: rgba(41,44,93,.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popup{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.popup form .inputs input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.overlayActividad{
+    background: rgba(41,44,93,.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayActividad.active{
+    visibility: visible;
+}
+
+.popupActividad{
+    background: #adb5bd;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 40px;
+    text-align: left;
+    width: 800px;
+    height: 500px;
+}
+
+.popupActividad .btn-cerrar-popupActivity{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #636464;
+    transition: .3s ease all;
+
+}
+
+.popupActividad .btn-cerrar-popupActivity:hover{
+    color: #06357a;
+}
+
+.popupActividad input{
+    border: 0;
+    text-align: center;
+
+}
+
+.popupActividad .marcar-completada{
+    width: 100%;
+    horiz-align: center;
+    text-align: center;
+    border: none;
+    background: #dc3545;
+    color: #c5d7f2;
+    padding: 5px 0;
+    font-size: 18px;
+    transition: all .06s ease;
+}
+
+.popupActividad .marcar-completada:hover{
+    background: #790101;
+}
+
+div[type="conten"]{
+    background: #fff;
+    width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+input[type="textTipo"]{
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+input[type="textDate"]{
+    width: 230px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+input[type="textE"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+input[type="textP"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+input[type="textC"]{
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+}

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos2.css">
+	<link rel="stylesheet" href="css/estilos3.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/main.css">
+	<LINK rel="stylesheet"  href="./css/bootstrap.min.css">
 </head>
 <body>
 
@@ -31,34 +33,39 @@
 </div>
 </header>
 
-
-	<div class="contenedor3">
-		<t3>Materias</t3>
-	</div>
-
 	<div class="overlay" id="overlay">
         <div class="popup" id="popup" style="background: #D5DBDB">
-            <h3>Nueva actividad</h3>
-            <form action="">
-                <div class="inputs">
-                    <input type="text" placeholder="Nombre" id="newActivityName">
-                    <div>
-                        tipo de actividad:
-                        <select id="newActivityType" style="width: 68%; margin-bottom: 20px; height: 30px">
-                            <option value="Taller">Taller</option>
-                            <option value="Parcial">Parcial</option>
-                            <option value="Quiz">Quiz</option>
-                            <option value="Proyecto">Poyecto</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                        <input type="date" placeholder="fecha de entrega" id="newActivityDate">
-                        <input type="number" placeholder="Ponderado (%)" id="newActivityPonderate" min="1" max="100" onkeypress="return validarNumericosPonderate(event, this)" >
-                    </div>
+			<div class="row">
+				<div class="form-title">
+					<h8>Materias</h8s>
+				</div>
+			</div>
 
-                </div>
-            </form>
-            <button type="submit" class="form-input" onclick="cancelarActividad()" >Cancelar actividad</button>
-            <button type="submit" class="form-input" onclick="agregarNuevaActividad()" >Agregar actividad</button>
+			<div class="row">
+				<div class="col-12">
+					<select type="menuMaterias" name="mis materias" id="listMatters" onchange="showMatter()">
+						<option>Mis materias</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<table class="table table-striped" id="tableActivities" >
+					<thead>
+					<tr>
+						<th scope="col">N°</th>
+						<th scope="col">Nombre actividad</th>
+						<th scope="col">tipo de actividad</th>
+						<th scope="col">fecha de entrega</th>
+						<th scope="col">alerta</th>
+						<th scope="col">nota</th>
+					</tr>
+					</thead>
+					<tbody id="bodyActivity">
+
+					</tbody>
+				</table>
+			</div>
         </div>
     </div>
 

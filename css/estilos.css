@@ -125,7 +125,7 @@ footer {
 }
 
 .form-title {
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-weight: normal;
     margin-bottom: 32px;
@@ -141,6 +141,7 @@ h3 {
     color: #2E4053 ;
     padding: 0 10px;
     font-size: 26px;
+    text-align: center;
 }
 
 h3::after,

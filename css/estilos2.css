@@ -28,7 +28,7 @@
 }
 
 .contenedor{
-    display: table;
+    display: flexbox;
 }
 .contenedor{
     width: 100%;
@@ -77,7 +77,6 @@
     font-size: 30px;
 }
 
-
 .scroll-container {
     display: block;
     width:auto;
@@ -85,3 +84,23 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
+
+.photo {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 48%;
+ }
+
+.photo2{
+    width: 48%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.photo3{
+    width: 32%;
+    display: inline-block;
+}
+
+

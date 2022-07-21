@@ -35,13 +35,28 @@
     margin-right: 50px;
 }
 
-
 .contenedor-{
     width: 98%;
-    margin: auto
+    margin: auto;
 }
 
 .contenedor-{
+    display: table;
+}
+.contenedor-footer{
+    width: 100%;
+    margin: auto;
+    height: 62px;
+    background: #F2F4F4;
+    color: #000;
+
+    position: bottom;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor-footer{
     display: table;
 }
 .contenedor3{
@@ -94,7 +109,7 @@
     scroll-behavior: smooth;
   }
 
-.photo {
+.photo{
     display: inline-block;
     margin: 0 auto;
     max-width: 100%;

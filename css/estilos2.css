@@ -46,7 +46,7 @@
 .contenedor-footer{
     width: 100%;
     margin: auto;
-    height: 62px;
+    height: 40px;
     background: #F2F4F4;
     color: #000;
 
@@ -59,6 +59,7 @@
 .contenedor-footer{
     display: table;
 }
+
 .contenedor3{
     position: relative;
     display: inline-block;
@@ -126,5 +127,4 @@
     width: 32%;
     display: inline-block;
 }
-
 

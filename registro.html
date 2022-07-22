@@ -31,72 +31,31 @@
 	</header>
 
 
-
-	<div class="overlay" id="overlay">
+    <div class="overlayRegistro" id="overlayRegistro">
         <div class="popup" id="popup" style="background: #D5DBDB">
-			<div class="row">
-				<div class="form-title">	
-					<h8>Horario</h8>
-				</div>
+			<div class="form-title">	
+				<h8>Registrar</h8>
 			</div>
-			
-			<div class="row">
-				<div class="col-12">
-					<select type="menuConsulta" name="mi consulta" id="listaConsulta">
-						<option>Semana</option>
-						<option>Dia</option>
+            <form action="">
+                <div class="inputs">
+					<label>Registrar</label>
+					<select id="newRecordType" style="width: 68%; margin-bottom: 20px; height: 30px">
+						<option value="Ingreso">Ingreso</option>
+						<option value="Salida">Salida</option>
 					</select>
-				</div>
-			</div>
-			<div class="scroll-container">
-			<div class="col-12">
-				<table class="table table-striped" id="tableActivities" >
-					<thead>
-					<tr>
-						<th scope="col">Hora</th>
-						<th scope="col">Lunes</th>
-						<th scope="col">Martes</th>
-						<th scope="col">Miercoles</th>
-						<th scope="col">Jueves</th>
-						<th scope="col">Viernes</th>
-						<th scope="col">Sabado</th>
-					</tr>
-				</thead>
-					<tr>
-						<td>8:00</td>
-					  </tr>
-					  <tr>
-						<td>9:00 </td>
-					  </tr>
-					  <tr>
-						<td>10:00</td>
-					  </tr>
-					  <tr>
-						<td>11:00</td>
-					  </tr>
-					  <tr>
-						<td>12:00 </td>
-					  </tr>
-					  <tr>
-						<td>13:00 </td>
-					  </tr>
-					  <tr>
-						<td>14:00</td>
-					  </tr>
-					  <tr>
-						<td>15:00 </td>
-					  </tr>
-					  <tr>
-						<td>16:00</td>
-					  </tr>
-					  <tr>
-						<td>17:00 </td>
-					  </tr>
-				</table>
-			</div>
-			</div>
+					<input type="text" placeholder="Sogamoso" id="newPlace" readonly="readonly">
+                    <div>
+                      
+                        <input type="date" placeholder="fecha de entrega" id="newActivityDate">
+                        <input type="number" placeholder="Ponderado (%)" id="newActivityPonderate" min="1" max="100" onkeypress="return validarNumericosPonderate(event, this)" >
+                    </div>
+
+                </div>
+            </form>
+            <button type="submit" class="form-input" onclick="cancelarActividad()" >Cancelar actividad</button>
+            <button type="submit" class="form-input" onclick="agregarNuevaActividad()" >Agregar actividad</button>
         </div>
- 
+    </div>
 
 
 <footer><div class="contenedor-footer"><div class="text-center">

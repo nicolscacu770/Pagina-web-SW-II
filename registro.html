@@ -46,14 +46,16 @@
 					<input type="text" placeholder="Sogamoso" id="newPlace" readonly="readonly">
                     <div>
                       
-                        <input type="date" placeholder="fecha de entrega" id="newActivityDate">
-                        <input type="number" placeholder="Ponderado (%)" id="newActivityPonderate" min="1" max="100" onkeypress="return validarNumericosPonderate(event, this)" >
+                        <input type="date" placeholder="fecha" id="newRecordDate">
+						<input type="number" placeholder="Hora formato 24 horas" id="newRecordHour">
+                        <input type="text" placeholder="Aula" id="newRecordAula">
+						<input type="text" placeholder="Materia" id="newRecordMatter">
                     </div>
 
                 </div>
             </form>
-            <button type="submit" class="form-input" onclick="cancelarActividad()" >Cancelar actividad</button>
-            <button type="submit" class="form-input" onclick="agregarNuevaActividad()" >Agregar actividad</button>
+            <button type="submit" class="form-input">Cancelar Ingreso</button>
+            <button type="submit" class="form-input">Agregar Ingreso</button>
         </div>
     </div>
 

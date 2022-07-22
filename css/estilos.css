@@ -176,6 +176,33 @@ h6::before {
     right: 100%;
 }
 
+h8 {
+    position: relative;
+    display: inline-block;
+    color: #2E4053 ;
+    padding: 0 10px;
+    font-size: 35px;
+}
+
+h8::after,
+h8::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #021e26;
+    top: 0.8em;
+}
+
+h8::after {
+    left: 100%;
+}
+
+h8::before {
+    right: 100%;
+}
+
+
 .cod-form {
     width: 100%;
     height: auto;

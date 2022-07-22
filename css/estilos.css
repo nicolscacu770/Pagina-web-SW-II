@@ -268,7 +268,7 @@ button[type="submit"]:hover {
 select[type="menuConsulta"] {
     background: none;
     border: none;
-    background: yellow;
+    background: #52BE80;
     color: #fff;
     width: 100%;
     font-size: 20px;

@@ -20,8 +20,6 @@ function agregarRegistro(){
 function cancelarRegistro(){
     overlay.classList.remove('active');
     popup.classList.remove('active');
-    overlayRegistro.classList.add('active');
-    popupRegistro.classList.add('active');
     document.getElementById("newActivityDate").value = "";
     document.getElementById("newRecordHour").value = "";
     document.getElementById("newRecordAula").value = "";

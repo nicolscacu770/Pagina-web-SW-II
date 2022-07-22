@@ -68,7 +68,7 @@
 
 .overlayRegistro{
     position: fixed;
-    top: 20px;
+    top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -89,7 +89,6 @@
     padding: 20px;
     text-align: center;
     width: 800px;
-    height: 500px;
 }
 
 .popupRegistro{

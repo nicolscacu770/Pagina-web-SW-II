@@ -15,8 +15,6 @@ btnCerrarPopupRecord.addEventListener('click', function (){
 function agregarRegistro(){
     overlay.classList.add('active');
     popup.classList.add('active');
-    overlayRegistro.classList.remove('active');
-    popupRegistro.classList.remove('active');
 }
 
 function cancelarRegistro(){

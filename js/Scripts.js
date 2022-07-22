@@ -6,6 +6,12 @@ var popupRegistro = document.getElementById("popupRegistro");
 var overlay = document.getElementById("overlay");
 var popup = document.getElementById("popup");
 
+var overlayAsignar = document.getElementById("overlayAsignar")
+var popupAsignar = document.getElementById("popupAsignar");
+
+var overlayAsignacion = document.getElementById("overlayAsignacion")
+var popupAsignacion = document.getElementById("popupAsignacion");
+
 const btnCerrarPopupRecord = document.getElementById("btn-cerrar-popupRecord");
 btnCerrarPopupRecord.addEventListener('click', function (){
     overlay.classList.remove('active');

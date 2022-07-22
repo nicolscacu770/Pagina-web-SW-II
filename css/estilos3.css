@@ -114,6 +114,39 @@
     visibility: visible;
 }
 
+.overlayConsultaEstudiantes{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+.overlayConsultaEstudiantes.active{
+    visibility: visible;
+}
+
+.overlayConsultaDocentes{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayConsultaDocentes.active{
+    visibility: visible;
+}
+
+
 .popup{
     background: #FFF3F5;
     box-shadow: 0px 0px 5px 0px #0a53be;
@@ -144,6 +177,24 @@
 }
 
 .popupAsignar{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.popupConsultaEstudiantes{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.popupConsultaDocentes{
     background: #FFF3F5;
     box-shadow: 0px 0px 5px 0px #0a53be;
     border-radius: 3px;

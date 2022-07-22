@@ -24,42 +24,52 @@
 			<label  class="icon-menu" for="menu-bar"></label>
 			<nav class="menu">
 				<a href="administrador.html">Página principal</a>
-				<a href="Materias.html">Consultar docentes</a>
-				<a href="Materias.html">Consultar estudiantes</a>
+				<a href="consultar_estudiantes.html">Consultar docentes</a>
+				<a href="consultar_docentes.html">Consultar estudiantes</a>
 				<a href="asignar_materia.html">Asignar materia</a>
 				<a href="index.html">Cerrar sesión</a>
 			</nav>
 	</div>
 	</header>
 
-	<div class="overlayAsignar" id="overlayAsignar">
-        <div class="popupAsignar" id="popupAsignar" style="background: #D5DBDB">
+	<div class="overlayConsultaEstudiantes" id="overlayConsultaEstudiantes">
+        <div class="popupConsultaEstudiantes" id="popupConsultaEstudiantes" style="background: #D5DBDB">
 			<div class="row">
 				<div class="form-title">	
-					<h8>Asignación de materias</h8>
+					<h3>Consulta estudiantes</h3>
 				</div>
 			</div>
+			<form action="">
+                <div class="input">
+					<div>
+					<label>Seccional <input type="text" placeholder="Sogamoso" id="newPlace" readonly="readonly"></label>
+					<label>Nombre <input type="text" placeholder="" id="newRecordTeacher"></label><br><br>
+                    <label>Codigo <input type="number" placeholder="" id="newRecordTeacher"></label>
+					<label>Carrera <input type="text" placeholder="" id="newRecordTeacher"></label>
+                    </div>
+
+                </div>
+            </form>
 
 			<div class="row" style="margin: 1em; background: #AEB6BF" id="MisRegistros">
 				<div class="col-3">
-					<h4 style="text-align: left; margin-top: 28px; font-size: 28px">Materias asignadas</h4>
+					<h4 style="text-align: left; margin-top: 28px; font-size: 28px">Estudiante</h4>
 				</div>
 
 				<div class="col-9">
-					<button type="submit" class="form-input" onclick="agregarAsignacion()" >Asignar materia</button><br><br>
+					<button type="submit" class="form-input">Buscar estudiante</button><br><br>
 				</div>
 
 				<div class="col-12">
-					<table class="table table-striped" id="tableRecords" >
+					<table class="table table-striped" id="tableSearch" >
 						<thead>
 						<tr>
-							<th scope="col">N°</th>
-							<th scope="col">Materia</th>
+							<th scope="col">Código</th>
+							<th scope="col">Nombre</th>
 							<th scope="col">Seccional</th>
-							<th scope="col">Docente</th>
-							<th scope="col">Hora</th>
-							<th scope="col">Aula</th>
-							<th scope="col">N° estudiantes</th>
+							<th scope="col">Carrera</th>
+							<th scope="col">Semestre</th>
+							<th scope="col">Observaciones</th>
 						</tr>
 						</thead>
 					</table>

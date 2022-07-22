@@ -12,6 +12,9 @@ var popupAsignar = document.getElementById("popupAsignar");
 var overlayAsignacion = document.getElementById("overlayAsignacion")
 var popupAsignacion = document.getElementById("popupAsignacion");
 
+var overlayConsultaEstudiantes = document.getElementById("overlayConsultaEstudiantes")
+var popupConsultaEstudiantes = document.getElementById("popupConsultaEstudiantes");
+
 const btnCerrarPopupRecord = document.getElementById("btn-cerrar-popupRecord");
 btnCerrarPopupRecord.addEventListener('click', function (){
     overlay.classList.remove('active');

@@ -86,9 +86,10 @@
     background: #FFF3F5;
     box-shadow: 0px 0px 5px 0px #0a53be;
     border-radius: 3px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     width: 800px;
+    height: 450px;
 }
 
 .popupRegistro{

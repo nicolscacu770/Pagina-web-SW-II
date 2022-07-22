@@ -13,36 +13,6 @@
     margin-left: 100px;
 }
 
-.contenedor1{
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    clear: both;
-}
-
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    
-}
-
-.contenedor{
-    display: table;
-}
-.contenedor{
-    width: 100%;
-    margin-right: 50px;
-}
-
-.contenedor-{
-    width: 98%;
-    margin: auto;
-}
-
-.contenedor-{
-    display: table;
-}
 .contenedor-footer{
     width: 100%;
     margin: auto;

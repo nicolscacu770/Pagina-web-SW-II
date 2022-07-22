@@ -38,31 +38,13 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-12">
-					<select type="menuMaterias" name="mis materias" id="listMatters" onchange="showMatter()">
-						<option>Mis materias</option>
-					</select>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-12 col-sm-4">
-					<h7 id="nameMatter">Materia: </h7>
-				</div>
-
-				<div class="col-12 col-sm-8">
-					<h7 id="promedio">promedio: </h7>
-				</div>
-			</div><br>
-
 			<div class="row" style="margin: 1em; background: #AEB6BF" id="MisActividades">
 				<div class="col-3">
 					<h4 style="text-align: left; margin-top: 28px; font-size: 28px">Actividades</h4>
 				</div>
 
 				<div class="col-9">
-					<button type="submit2" class="form-input" onclick="agregarActividad()" >Agregar actividad</button><br><br>
+					<button type="submit" class="form-input" onclick="agregarRegistro()" >Agregar registro</button><br><br>
 				</div>
 
 				<div class="col-12">
@@ -84,64 +66,9 @@
 				</div>
 			</div>
 		</div>
-
-	</div>       
-	<div class="overlay" id="overlay">
-        <div class="popup" id="popup" style="background: #D5DBDB">
-			<div class="row">
-				<div class="form-title">	
-					<h8>Horario</h8>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-12">
-					<select type="menuMaterias" name="mis materias" id="listMatters" onchange="showMatter()">
-						<option>Mis materias</option>
-					</select>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-12 col-sm-4">
-					<h7 id="nameMatter">Materia: </h7>
-				</div>
-
-				<div class="col-12 col-sm-8">
-					<h7 id="promedio">promedio: </h7>
-				</div>
-			</div><br>
-
-			<div class="row" style="margin: 1em; background: #AEB6BF" id="MisActividades">
-				<div class="col-3">
-					<h4 style="text-align: left; margin-top: 28px; font-size: 28px">Actividades</h4>
-				</div>
-
-				<div class="col-9">
-					<button type="submit2" class="form-input" onclick="agregarActividad()" >Agregar actividad</button><br><br>
-				</div>
-
-				<div class="col-12">
-					<table class="table table-striped" id="tableActivities" >
-						<thead>
-						<tr>
-							<th scope="col">N°</th>
-							<th scope="col">Nombre actividad</th>
-							<th scope="col">tipo de actividad</th>
-							<th scope="col">fecha de entrega</th>
-							<th scope="col">alerta</th>
-							<th scope="col">nota</th>
-						</tr>
-						</thead>
-						<tbody id="bodyActivity">
-
-						</tbody>
-					</table>
-				</div>
-			</div>
 		</div>
 
-	</div>
+
 
     <div class="overlay" id="overlay">
         <div class="popup" id="popup" style="background: #D5DBDB">
@@ -166,7 +93,7 @@
 
                 </div>
             </form>
-            <button type="submit" class="form-input">Cancelar Ingreso</button>
+            <button type="submit" class="form-input" onclick="cancelarRegistro">Cancelar Ingreso</button>
             <button type="submit" class="form-input">Agregar Ingreso</button>
         </div>
     </div>
@@ -178,6 +105,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/form.js"></script>
+	<script src="js/Scripts.js"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

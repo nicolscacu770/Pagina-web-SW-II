@@ -18,6 +18,12 @@ btnCerrarPopupRecord.addEventListener('click', function (){
     popup.classList.remove('active');
 });
 
+const btnCerrarPopupAssign = document.getElementById("btn-cerrar-popupAssign");
+btnCerrarPopupAssign.addEventListener('click', function (){
+    overlayAsignacion.classList.remove('active');
+    popupAsignacion.classList.remove('active');
+});
+
 function agregarRegistro(){
     overlay.classList.add('active');
     popup.classList.add('active');
@@ -26,6 +32,20 @@ function agregarRegistro(){
 function cancelarRegistro(){
     overlay.classList.remove('active');
     popup.classList.remove('active');
+    document.getElementById("newActivityDate").value = "";
+    document.getElementById("newRecordHour").value = "";
+    document.getElementById("newRecordAula").value = "";
+    document.getElementById("newRecordMatter").value = "";
+}
+
+function agregarAsignacion(){
+    overlayAsignacion.classList.add('active');
+    popupAsignacion.classList.add('active');
+}
+
+function cancelarAsignacion(){
+    overlayAsignacion.classList.remove('active');
+    popupAsignacion.classList.remove('active');
     document.getElementById("newActivityDate").value = "";
     document.getElementById("newRecordHour").value = "";
     document.getElementById("newRecordAula").value = "";

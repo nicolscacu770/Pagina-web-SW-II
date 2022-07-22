@@ -158,6 +158,12 @@
     margin-bottom: 20px;
 }
 
+.popupAsignacion form .inputs input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
 .popup .btn-cerrar-popupRecord{
     font-size: 16px;
     line-height: 16px;
@@ -173,6 +179,26 @@
 }
 
 .popup input{
+    border: 0;
+    text-align: center;
+
+}
+
+.popupAsignacion .btn-cerrar-popupAssign{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #636464;
+    transition: .3s ease all;
+
+}
+
+.popupAsignacion .btn-cerrar-popupAssign:hover{
+    color: #06357a;
+}
+
+.popupAsignacion input{
     border: 0;
     text-align: center;
 

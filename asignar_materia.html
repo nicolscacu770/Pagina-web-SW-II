@@ -46,7 +46,7 @@
 				</div>
 
 				<div class="col-9">
-					<button type="submit" class="form-input" onclick="agregarRegistro()" >Asignar materia</button><br><br>
+					<button type="submit" class="form-input" onclick="agregarAsignacion()" >Asignar materia</button><br><br>
 				</div>
 
 				<div class="col-12">
@@ -54,12 +54,12 @@
 						<thead>
 						<tr>
 							<th scope="col">N°</th>
-							<th scope="col">Tipo de registro</th>
+							<th scope="col">Materia</th>
 							<th scope="col">Seccional</th>
-							<th scope="col">Fecha de registro</th>
+							<th scope="col">Docente</th>
 							<th scope="col">Hora</th>
 							<th scope="col">Aula</th>
-							<th scope="col">Materia</th>
+							<th scope="col">N° estudiantes</th>
 						</tr>
 						</thead>
 					</table>
@@ -72,26 +72,25 @@
 
     <div class="overlayAsignacion" id="overlayAsignacion">
         <div class="popupAsignacion" id="popupAsignacion" style="background: #D5DBDB">
-				<h3>Registrar</h3>
+				<h3>Asignación</h3>
             <form action="">
                 <div class="inputs">
 					<div>
-					Registrar
-					<select id="newRecordType" style="width: 68%; margin-bottom: 20px; height: 30px">
-						<option value="Ingreso">Ingreso</option>
-						<option value="Salida">Salida</option>
+					Materia
+					<select type="menuMaterias" name="escogeMateria" id="listMatters" onchange="showMatter()" style="width: 68%; margin-bottom: 20px; height: 30px">
+                            <option>Escoge materia</option>
 					</select>
 					<input type="text" placeholder="Sogamoso" id="newPlace" readonly="readonly">
-                    <input type="date" placeholder="fecha" id="newRecordDate">
-					<input type="number" placeholder="Hora formato 24 horas" id="newRecordHour">
+                    <input type="text" placeholder="Docente" id="newRecordTeacher">
+					<input type="time" placeholder="Hora" id="newRecordHour">
                     <input type="text" placeholder="Aula" id="newRecordAula">
-					<input type="text" placeholder="Materia" id="newRecordMatter">
+					<input type="number" placeholder="N° estudiantes" id="newRecordStudents">
                     </div>
 
                 </div>
             </form>
-            <button type="submit" class="form-input" onclick="cancelarRegistro()">Cancelar Ingreso</button>
-            <button type="submit" class="form-input">Agregar Ingreso</button>
+            <button type="submit" class="form-input" onclick="cancelarAsignacion()">Cancelar Asignación</button>
+            <button type="submit" class="form-input">Agregar Asignación</button>
         </div>
     </div>
 

@@ -1,104 +1,304 @@
-.contenedor2{
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    
-}
 
-.contenedor2{
-    display: table;
-}
-.contenedor2{
-    width: 100%;
-    margin-left: 100px;
-}
 
-.contenedor-footer{
-    width: 100%;
-    margin: auto;
-    height: 40px;
-    background: #F2F4F4;
-    color: #000;
-
-    position: bottom;
+.overlayConsulta{
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
-    z-index: 100;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: visible;
 }
 
-.contenedor-footer{
-    display: table;
+.overlayConsulta.active{
+    visibility: visible;
 }
 
-
-.contenedor3{
-    position: relative;
-    display: inline-block;
+.popupConsulta{
+    background: gainsboro;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
     text-align: center;
-    
+    width: 800px;
 }
 
-.contenedor3{
-    display: table;
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
 }
-.contenedor3{
-    width: 100%;
-    margin-right: 50px;
+
+.overlay.active{
+    visibility: visible;
+}
+
+.overlayMenu{
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+.overlayMenu.active{
+    visibility: visible;
+}
+
+.overlayRegistro{
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+.overlayRegistro.active{
+    visibility: visible;
+}
+
+.overlayAsignar{
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+.overlayAsignar.active{
+    visibility: visible;
+}
+
+.overlayAsignacion{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayAsignacion.active{
+    visibility: visible;
+}
+
+.overlayConsultaEstudiantes{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+.overlayConsultaEstudiantes.active{
+    visibility: visible;
+}
+
+.overlayConsultaDocentes{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayConsultaDocentes.active{
+    visibility: visible;
 }
 
 
-.texto1{
-    position: relative;
-    bottom: 30px;
-    left: 0px;
-    color: white;
-}
-.texto2{
-    position: relative;
-    bottom: 30px;
-    left: 0px;
-    color: white;
-    
-}
-.texto{
-    position: relative;
-    bottom: 30px;
-    left: 0px;
-    color: white;
-    margin-right: 400px;
+.popup{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+    height: 450px;
 }
 
-.form-title h8{
-    position: relative;
-    left: 0px;
-    color: black;
-    font-size: 30px;
+.popupAsignacion{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+    height: 450px;
 }
 
-.scroll-container {
+.popupRegistro{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.popupAsignar{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.popupConsultaEstudiantes{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.popupConsultaDocentes{
+    background: #FFF3F5;
+    box-shadow: 0px 0px 5px 0px #0a53be;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 800px;
+}
+
+.popup form .inputs input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.popupAsignacion form .inputs input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.popup .btn-cerrar-popupRecord{
+    font-size: 16px;
+    line-height: 16px;
     display: block;
-    width:auto;
-    height: 330px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
+    text-align: right;
+    color: #636464;
+    transition: .3s ease all;
 
-.photo{
-    display: inline-block;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 48%;
- }
-
-.photo2{
-    width: 48%;
-    display: inline-block;
-    margin: 0 auto;
 }
 
-.photo3{
-    width: 32%;
-    display: inline-block;
+.popup .btn-cerrar-popupRecord:hover{
+    color: #06357a;
 }
 
+.popup input{
+    border: 0;
+    text-align: center;
 
+}
+
+.popupAsignacion .btn-cerrar-popupAssign{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #636464;
+    transition: .3s ease all;
+
+}
+
+.popupAsignacion .btn-cerrar-popupAssign:hover{
+    color: #06357a;
+}
+
+.popupAsignacion input{
+    border: 0;
+    text-align: center;
+
+}
+
+div[type="conten"]{
+    background: #fff;
+    width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+input[type="textTipo"]{
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+input[type="textDate"]{
+    width: 230px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+input[type="textE"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+input[type="textP"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+input[type="textC"]{
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    text-align: center;
+}

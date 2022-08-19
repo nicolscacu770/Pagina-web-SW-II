@@ -23,6 +23,11 @@ header{
     left: 0;
     z-index: 100;;
 }
+
+header .contenedor{
+    display: table;
+}
+
 .contenedor-encabezado{
     width: 98%;
     margin: auto

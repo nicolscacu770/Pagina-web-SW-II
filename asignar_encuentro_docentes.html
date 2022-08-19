@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Control Laboratorios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<LINK rel="stylesheet"  href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body >
+	
+	<header>
+		
+		<div class="contenedor-encabezado">
+			<h111>Control de los laboratorios</h111></img>
+			<input type="checkbox" name="" id="menu-bar">
+			<label  class="icon-menu" for="menu-bar"></label>
+			<nav class="menu">
+				<a href="docentes.html">Página principal</a>
+				<a href="consultar_horario_docentes.html">Consultar horario</a>
+				<a href="registro_docentes.html">Registrar ingreso y/o salida</a>
+				<a href="index.html">Cerrar sesión</a>
+			</nav>
+	</div>
+	</header>
+
+	<div class="overlayAsignar" id="overlayAsignar">
+        <div class="popupAsignar" id="popupAsignar" style="background: #D5DBDB">
+			<div class="row">
+				<div class="form-title">	
+					<h8>Asignación de encuentro - Docente</h8>
+				</div>
+			</div>
+
+			<div class="row" style="margin: 1em; background: #AEB6BF" id="MisRegistros">
+				<div class="col-3">
+					<h4 style="text-align: left; margin-top: 28px; font-size: 28px">Encuentros asignados</h4>
+				</div>
+
+				<div class="col-9">
+					<button type="submit" class="form-input" onclick="agregarAsignacion()" >Asignar encuentro</button><br><br>
+				</div>
+
+				<div class="col-12">
+					<table class="table table-striped" id="tableAssign" >
+						<thead>
+						<tr>
+							<th scope="col">N°</th>
+							<th scope="col">Materia</th>
+							<th scope="col">Seccional</th>
+							<th scope="col">Docente</th>
+							<th scope="col">Hora</th>
+							<th scope="col">Aula</th>
+							<th scope="col">N° estudiantes</th>
+						</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+
+    <div class="overlayAsignacion" id="overlayAsignacion">
+        <div class="popupAsignacion" id="popupAsignacion" style="background: #D5DBDB">
+				<h3>Asignación - Docente </h3>
+            <form action="">
+                <div class="inputs">
+					<div>
+					<input type="text" placeholder="Materia" id="newRecordMatter">
+					<input type="text" placeholder="Sogamoso" id="newPlace" readonly="readonly">
+                    <input type="text" placeholder="Docente" id="newRecordTeacher">
+					<input type="time" placeholder="Hora" id="newRecordHour">
+                    <input type="text" placeholder="Aula" id="newRecordAula">
+					<input type="number" placeholder="N° estudiantes" id="newRecordStudents">
+                    </div>
+
+                </div>
+            </form>
+            <button type="submit" class="form-input" onclick="cancelarAsignacion()">Cancelar Asignación</button>
+            <button type="submit" class="form-input">Agregar Asignación</button>
+        </div>
+    </div>
+
+	
+
+
+<footer><div class="contenedor-footer"><div class="text-center">
+	<p>&#169Universidad Pedagógica y Tecnológica de Colombia. Dirección de Tecnologías de la Información.</p>
+		</div></div></footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/form.js"></script>
+	<script src="js/Scripts.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

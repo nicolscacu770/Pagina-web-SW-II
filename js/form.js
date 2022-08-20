@@ -120,7 +120,7 @@ function Validar() {
 
         }
 }
-function redirec(){window.location.href="docentes_estudiantes.html";}
+function redirec(){window.location.href="estudiantes.html";}
 
 function registrarse(){
 
